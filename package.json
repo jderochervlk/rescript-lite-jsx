@@ -1,0 +1,21 @@
+{
+  "name": "rescript-lite-jsx",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript -w",
+    "test": "retest 'test/**/*.res.mjs'"
+  },
+  "dependencies": {
+    "@lite-jsx/core": "^2.0.0",
+    "@rescript/core": "^1.3.0",
+    "rescript": "^11.1.0"
+  },
+  "devDependencies": {
+    "rescript-test": "^7.0.1",
+    "vite": "^5.0.6"
+  }
+}
