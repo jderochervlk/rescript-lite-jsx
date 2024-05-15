@@ -10,15 +10,15 @@ Requires Rescript 11+.
 npm i @jvlk/rescript-lite-jsx
 ```
 Update your project's `rescript.json` file.
-```json
+```diff
 {
     "bs-dependencies": [
-        + "@jvlk/rescript-lite-jsx"
++     "@jvlk/rescript-lite-jsx"
     ],
-    + "jsx": {
-    +   "version": 4,
-    +   "module": "Lite"
-    + }
++   "jsx": {
++       "version": 4,
++       "module": "Lite"
++     }
 }
 ```
 ## How to use
