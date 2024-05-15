@@ -1,7 +1,18 @@
 {
-  "name": "rescript-lite-jsx",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@jvlk/rescript-lite-jsx",
+  "version": "1.0.0",
+  "author": {
+    "name": "Josh Derocher-Vlk",
+    "email": "josh@vlkpack.com"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/jderochervlk/rescript-lite-jsx"
+  },
+  "bugs": {
+    "url": "https://github.com/jderochervlk/rescript-lite-jsx/issues"
+  },
+  "license": "ISC",
   "type": "module",
   "scripts": {
     "res:build": "rescript",
@@ -11,11 +22,9 @@
   },
   "dependencies": {
     "@lite-jsx/core": "^2.0.0",
-    "@rescript/core": "^1.3.0",
     "rescript": "^11.1.0"
   },
   "devDependencies": {
-    "rescript-test": "^7.0.1",
-    "vite": "^5.0.6"
+    "rescript-test": "^7.0.1"
   }
 }
