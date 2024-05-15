@@ -1,6 +1,6 @@
 {
-  "name": "lit",
-  "namespace": true,
+  "name": "@jvlk/rescript-lite-jsx",
+  "namespace": false,
   "sources": [
     {
       "dir": "src",
@@ -26,6 +26,6 @@
   "bsc-flags": [],
   "jsx": {
     "version": 4,
-    "module": "Lit"
+    "module": "Lite"
   }
 }

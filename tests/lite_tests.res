@@ -6,7 +6,7 @@ module Component = {
 }
 
 test("jsx", () => {
-  let html = <Component message={"hello"->Lit.string} />
+  let html = <Component message={"hello"->Lite.string} />
   assertion(
     ~message="creates a valid HTML string",
     (_a, _b) => {

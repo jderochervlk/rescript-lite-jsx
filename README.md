@@ -17,7 +17,7 @@ Update your project's `rescript.json` file.
     ],
     + "jsx": {
     +   "version": 4,
-    +   "module": "Lit"
+    +   "module": "Lite"
     + }
 }
 ```
