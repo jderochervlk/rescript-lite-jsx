@@ -1,6 +1,6 @@
 {
   "name": "@jvlk/rescript-lite-jsx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Josh Derocher-Vlk",
     "email": "josh@vlkpack.com"
@@ -14,6 +14,10 @@
   },
   "license": "ISC",
   "type": "module",
+  "keywords": [
+    "rescript",
+    "jsx"
+  ],
   "scripts": {
     "res:build": "rescript",
     "res:clean": "rescript clean",

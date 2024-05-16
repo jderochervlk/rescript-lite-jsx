@@ -2,7 +2,7 @@ open Test
 
 module Component = {
   @jsx.component
-  let make = (~message) => <h1 class="large"> {message} </h1>
+  let make = (~message) => <h1 class="large" hxGet="/foo"> {message} </h1>
 }
 
 test("jsx", () => {
