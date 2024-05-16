@@ -31,3 +31,6 @@ let make = (~message) => <h1 class="title">{message->Lit.string}</h1>
 // app.res
 let html = <Title message="Welcome!">
 ```
+
+- You should use `class` and not `className`
+- Supports HTMX props!

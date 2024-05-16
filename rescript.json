@@ -19,7 +19,9 @@
     }
   ],
   "suffix": ".res.mjs",
-  "bs-dependencies": [],
+  "bs-dependencies": [
+    "@jvlk/rescript-htmx"
+  ],
   "bs-dev-dependencies": [
     "rescript-test"
   ],

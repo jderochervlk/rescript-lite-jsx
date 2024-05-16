@@ -22,9 +22,10 @@
     "res:build": "rescript",
     "res:clean": "rescript clean",
     "res:dev": "rescript -w",
-    "test": "retest 'test/**/*.res.mjs'"
+    "test": "retest 'tests/**/*.res.mjs'"
   },
   "dependencies": {
+    "@jvlk/rescript-htmx": "^1.0.0",
     "@lite-jsx/core": "^2.0.0",
     "rescript": "^11.1.0"
   },

@@ -1,18 +1,26 @@
 open Test
 
-module Component = {
-  @jsx.component
-  let make = (~message) => <h1 class="large" hxGet="/foo"> {message} </h1>
-}
-
 test("jsx", () => {
-  let html = <Component message={"hello"->Lite.string} />
+  module Component = {
+    @jsx.component
+    let make = (~message) => <h1 class="large"> {message} </h1>
+  }
+
   assertion(
     ~message="creates a valid HTML string",
     (_a, _b) => {
       %raw("_a === _b")
     },
-    html,
+    <Component message={"hello"->Lite.string} />,
     "<h1 class=\"large\">hello</h1>",
+  )
+
+  assertion(
+    ~message="HTMX props work",
+    (_a, _b) => {
+      %raw("_a === _b")
+    },
+    <div hxGet="/test"> {Lite.string("HTMX")} </div>,
+    "<div hx-get=\"/test\">HTMX</div>",
   )
 })

@@ -29,11 +29,7 @@ type fragmentProps = {children?: element}
 module Elements = {
   type props = {
     ...JsxDOM.domProps,
-    class?: string,
-    @as("hx-get") hxGet?: string,
-    @as("hx-post") hxPost?: string,
-    @as("hx-push-url") hxPushUrl?: string,
-    @as("hx-select") hxSelect?: string,
+    ...Htmx.JsxProps.t,
   }
 
   @module("./vendor.mjs")
